@@ -1,0 +1,5 @@
+---
+target: 1umiv_conv
+reference: 1umiv_conv_reference.cir
+netlist: "/home/anagix/work/2020SepTO/IshibeOpAmp/1umtestbe.net"
+schematic: "/home/anagix/work/2020SepTO/IshibeOpAmp/1umtestbe.asc"
