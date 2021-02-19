@@ -1,0 +1,23 @@
+.title KiCad schematic
+M11 Net__M10_Pad3_ Net__M10_Pad3_ "/gnd" "/gnd" nch l=1u w=16u ad=3.5e_10 as=3.5e_10 pd=64e_6 ps=64e_6
+M10 Net__M10_Pad1_ Net__M10_Pad1_ Net__M10_Pad3_ "/gnd" nch l=1u w=16u ad=3.5e_10 as=3.5e_10 pd=64e_6 ps=64e_6
+M14 Net__M13_Pad3_ Net__M10_Pad3_ "/gnd" "/gnd" nch l=1u w=16u ad=3.5e_10 as=3.5e_10 pd=64e_6 ps=64e_6
+M13 Net__C1_Pad2_ Net__M10_Pad1_ Net__M13_Pad3_ "/gnd" nch l=1u w=16u ad=3.5e_10 as=3.5e_10 pd=64e_6 ps=64e_6
+M2 Net__M18_Pad2_ Net__M1_Pad1_ "/gnd" "/gnd" nch l=1u w=34u ad=7e_10 as=7e_10 pd=114e_6 ps=114e_6
+M4 Net__M12_Pad2_ Net__M1_Pad1_ "/gnd" "/gnd" nch l=1u w=16u ad=3.5e_10 as=3.5e_10 pd=64e_6 ps=64e_6
+M19 "/Vout" Net__M16_Pad3_ "/gnd" "/gnd" nch l=1u w=100u ad=2.1e_9 as=2.1e_9 pd=314e_6 ps=314e_6
+M17 Net__M16_Pad3_ Net__M10_Pad3_ "/gnd" "/gnd" nch l=1u w=16u ad=3.5e_10 as=3.5e_10 pd=64e_6 ps=64e_6
+M16 "/VDD" Net__C1_Pad2_ Net__M16_Pad3_ "/gnd" nch l=1u w=16u ad=3.5e_10 as=3.5e_10 pd=64e_6 ps=64e_6
+M8 Net__M15_Pad3_ Net__M18_Pad2_ "/VDD" "/VDD" pch l=1u w=50u ad=1.05e_9 as=1.05e_9 pd=164e_6 ps=164e_6
+M5 Net__M5_Pad1_ Net__M5_Pad1_ Net__M15_Pad3_ Net__M15_Pad3_ pch l=1u w=38u ad=5.25e_10 as=5.25e_10 pd=89e_6 ps=89e_6
+M6 Net__M12_Pad2_ Net__M12_Pad2_ Net__M5_Pad1_ Net__M5_Pad1_ pch l=1u w=38u ad=5.25e_10 as=5.25e_10 pd=89e_6 ps=89e_6
+M12 Net__C1_Pad2_ Net__M12_Pad2_ Net__M12_Pad3_ Net__M12_Pad3_ pch l=1u w=19u ad=5.25e_10 as=5.25e_10 pd=89e_6 ps=89e_6
+M9 Net__M10_Pad1_ Net__M12_Pad2_ Net__M7_Pad1_ Net__M7_Pad1_ pch l=1u w=19u ad=5.25e_10 as=5.25e_10 pd=89e_6 ps=89e_6
+M7 Net__M7_Pad1_ NC_01 Net__M15_Pad3_ Net__M15_Pad3_ pch l=1u w=25u ad=5.25e_10 as=5.25e_10 pd=89e_6 ps=89e_6
+M18 "/Vout" Net__M18_Pad2_ "/VDD" "/VDD" pch l=1u w=50u ad=1.05e_9 as=1.05e_9 pd=164e_6 ps=164e_6
+M3 Net__M18_Pad2_ Net__M18_Pad2_ "/VDD" "/VDD" pch l=1u w=50u ad=1.05e_9 as=1.05e_9 pd=164e_6 ps=164e_6
+M1 Net__M1_Pad1_ Net__M1_Pad1_ "/gnd" "/gnd" nch l=1u w=34u ad=7e_10 as=7e_10 pd=114e_6 ps=114e_6
+R3 "/VDD" Net__M1_Pad1_ 40k
+C1 "/Vout" Net__C1_Pad2_ 3p
+M15 Net__M12_Pad3_ NC_02 Net__M15_Pad3_ Net__M15_Pad3_ pch l=1u w=25u ad=5.25e_10 as=5.25e_10 pd=89e_6 ps=89e_6
+.end

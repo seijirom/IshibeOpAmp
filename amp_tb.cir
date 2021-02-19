@@ -1,0 +1,30 @@
+.title KiCad schematic
+.include "models/OR1_mos"
+V2 "/Sheet6020FB4C/VDD" GND dc(5)
+V1 Net-_R1-Pad2_ GND sin(2.5 0.1 1k)
+R1 "/Sheet6020FB4C/Vinm" Net-_R1-Pad2_ 1k
+R2 "/Sheet6020FB4C/Vout" "/Sheet6020FB4C/Vinm" 10k
+V3 "/Sheet6020FB4C/Vinp" GND dc(2.5)
+M11 Net-_M10-Pad3_ Net-_M10-Pad3_ GND GND nch l=1u w=16u ad=3.5e-10 as=3.5e-10 pd=64e-6 ps=64e-6
+M10 Net-_M10-Pad1_ Net-_M10-Pad1_ Net-_M10-Pad3_ GND nch l=1u w=16u ad=3.5e-10 as=3.5e-10 pd=64e-6 ps=64e-6
+M14 Net-_M13-Pad3_ Net-_M10-Pad3_ GND GND nch l=1u w=16u ad=3.5e-10 as=3.5e-10 pd=64e-6 ps=64e-6
+M13 Net-_C1-Pad2_ Net-_M10-Pad1_ Net-_M13-Pad3_ GND nch l=1u w=16u ad=3.5e-10 as=3.5e-10 pd=64e-6 ps=64e-6
+M2 Net-_M18-Pad2_ Net-_M1-Pad1_ GND GND nch l=1u w=34u ad=7e-10 as=7e-10 pd=114e-6 ps=114e-6
+M4 Net-_M12-Pad2_ Net-_M1-Pad1_ GND GND nch l=1u w=16u ad=3.5e-10 as=3.5e-10 pd=64e-6 ps=64e-6
+M19 "/Sheet6020FB4C/Vout" Net-_M16-Pad3_ GND GND nch l=1u w=100u ad=2.1e-9 as=2.1e-9 pd=314e-6 ps=314e-6
+M17 Net-_M16-Pad3_ Net-_M10-Pad3_ GND GND nch l=1u w=16u ad=3.5e-10 as=3.5e-10 pd=64e-6 ps=64e-6
+M16 "/Sheet6020FB4C/VDD" Net-_C1-Pad2_ Net-_M16-Pad3_ GND nch l=1u w=16u ad=3.5e-10 as=3.5e-10 pd=64e-6 ps=64e-6
+M8 Net-_M15-Pad3_ Net-_M18-Pad2_ "/Sheet6020FB4C/VDD" "/Sheet6020FB4C/VDD" pch l=1u w=50u ad=1.05e-9 as=1.05e-9 pd=164e-6 ps=164e-6
+M5 Net-_M5-Pad1_ Net-_M5-Pad1_ Net-_M15-Pad3_ Net-_M15-Pad3_ pch l=1u w=38u ad=5.25e-10 as=5.25e-10 pd=89e-6 ps=89e-6
+M6 Net-_M12-Pad2_ Net-_M12-Pad2_ Net-_M5-Pad1_ Net-_M5-Pad1_ pch l=1u w=38u ad=5.25e-10 as=5.25e-10 pd=89e-6 ps=89e-6
+M12 Net-_C1-Pad2_ Net-_M12-Pad2_ Net-_M12-Pad3_ Net-_M12-Pad3_ pch l=1u w=19u ad=5.25e-10 as=5.25e-10 pd=89e-6 ps=89e-6
+M9 Net-_M10-Pad1_ Net-_M12-Pad2_ Net-_M7-Pad1_ Net-_M7-Pad1_ pch l=1u w=19u ad=5.25e-10 as=5.25e-10 pd=89e-6 ps=89e-6
+M7 Net-_M7-Pad1_ "/Sheet6020FB4C/Vinm" Net-_M15-Pad3_ Net-_M15-Pad3_ pch l=1u w=25u ad=5.25e-10 as=5.25e-10 pd=89e-6 ps=89e-6
+M18 "/Sheet6020FB4C/Vout" Net-_M18-Pad2_ "/Sheet6020FB4C/VDD" "/Sheet6020FB4C/VDD" pch l=1u w=50u ad=1.05e-9 as=1.05e-9 pd=164e-6 ps=164e-6
+M3 Net-_M18-Pad2_ Net-_M18-Pad2_ "/Sheet6020FB4C/VDD" "/Sheet6020FB4C/VDD" pch l=1u w=50u ad=1.05e-9 as=1.05e-9 pd=164e-6 ps=164e-6
+M1 Net-_M1-Pad1_ Net-_M1-Pad1_ GND GND pch l=1u w=34u ad=7e-10 as=7e-10 pd=114e-6 ps=114e-6
+R3 "/Sheet6020FB4C/VDD" Net-_M1-Pad1_ 40k
+C1 "/Sheet6020FB4C/Vout" Net-_C1-Pad2_ 3p
+M15 Net-_M12-Pad3_ "/Sheet6020FB4C/Vinp" Net-_M15-Pad3_ Net-_M15-Pad3_ pch l=1u w=25u ad=5.25e-10 as=5.25e-10 pd=89e-6 ps=89e-6
+M20 NC_01 NC_02 NC_03 NC_04 NMOS_OR1 l=1u w=2u
+.end

@@ -1,0 +1,40 @@
+* C:\Users\seijirom\Dropbox\MakeLSI\2020_9\IshibeOpAmp\test.asc
+XX1 N001 Vdd_half Vout Vdd 0 opamp3ureiauto
+R1 Vout N001 10k
+V1 Vdd_half 0 2.5
+V2 Vdd 0 5
+R2 N001 WE 1k
+V3 WE 0 SINE(2.5 0.1 1k)
+
+* block symbol definitions
+.subckt opamp3ureiauto Vinm Vinp Vout VDD Vbias
+M1 N011 N011 0 0 nch l=1u w=16u ad=3.5e-10 as=3.5e-10 pd=64e-6 ps=64e-6
+M2 N009 N009 N011 0 nch l=1u w=16u ad=3.5e-10 as=3.5e-10 pd=64e-6 ps=64e-6
+M3 N012 N011 0 0 nch l=1u w=16u ad=3.5e-10 as=3.5e-10 pd=64e-6 ps=64e-6
+M4 N008 N009 N012 0 nch l=1u w=16u ad=3.5e-10 as=3.5e-10 pd=64e-6 ps=64e-6
+M5 N001 N006 0 0 nch l=1u w=34u ad=7e-10 as=7e-10 pd=114e-6 ps=114e-6
+M6 N007 N006 0 0 nch l=1u w=16u ad=3.5e-10 as=3.5e-10 pd=64e-6 ps=64e-6
+M10 Vout N010 0 0 nch l=1u w=100u ad=2.1e-9 as=2.1e-9 pd=314e-6 ps=314e-6
+M11 N010 N011 0 0 nch l=1u w=16u ad=3.5e-10 as=3.5e-10 pd=64e-6 ps=64e-6
+M12 VDD N008 N010 0 nch l=1u w=16u ad=3.5e-10 as=3.5e-10 pd=64e-6 ps=64e-6
+M13 N002 N001 VDD VDD pch l=1u w=50u ad=1.05e-9 as=1.05e-9 pd=164e-6 ps=164e-6
+M14 N003 N003 N002 N002 pch l=1u w=38u ad=5.25e-10 as=5.25e-10 pd=89e-6 ps=89e-6
+M15 N007 N007 N003 N003 pch l=1u w=38u ad=5.25e-10 as=5.25e-10 pd=89e-6 ps=89e-6
+M16 N008 N007 N005 N005 pch l=1u w=19u ad=5.25e-10 as=5.25e-10 pd=89e-6 ps=89e-6
+M17 N009 N007 N004 N004 pch l=1u w=19u ad=5.25e-10 as=5.25e-10 pd=89e-6 ps=89e-6
+M18 N004 Vinm N002 N002 pch l=1u w=25u ad=5.25e-10 as=5.25e-10 pd=89e-6 ps=89e-6
+M20 Vout N001 VDD VDD pch l=1u w=50u ad=1.05e-9 as=1.05e-9 pd=164e-6 ps=164e-6
+M21 N005 Vinp N002 N002 pch l=1u w=25u ad=5.25e-10 as=5.25e-10 pd=89e-6 ps=89e-6
+M24 N001 N001 VDD VDD pch l=1u w=50u ad=1.05e-9 as=1.05e-9 pd=164e-6 ps=164e-6
+M7 N006 N006 0 0 nch l=1u w=34u ad=7e-10 as=7e-10 pd=114e-6 ps=114e-6
+R1 VDD N006 40k
+C1 Vout N008 3p
+.inc ./models/OR1_mos
+.ends opamp3ureiauto
+
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\seijirom\Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 10m
+.backanno
+.end
