@@ -22,9 +22,8 @@ M9 Net-_M10-Pad1_ Net-_M12-Pad2_ Net-_M7-Pad1_ Net-_M7-Pad1_ pch l=1u w=19u ad=5
 M7 Net-_M7-Pad1_ "/Sheet6020FB4C/Vinm" Net-_M15-Pad3_ Net-_M15-Pad3_ pch l=1u w=25u ad=5.25e-10 as=5.25e-10 pd=89e-6 ps=89e-6
 M18 "/Sheet6020FB4C/Vout" Net-_M18-Pad2_ "/Sheet6020FB4C/VDD" "/Sheet6020FB4C/VDD" pch l=1u w=50u ad=1.05e-9 as=1.05e-9 pd=164e-6 ps=164e-6
 M3 Net-_M18-Pad2_ Net-_M18-Pad2_ "/Sheet6020FB4C/VDD" "/Sheet6020FB4C/VDD" pch l=1u w=50u ad=1.05e-9 as=1.05e-9 pd=164e-6 ps=164e-6
-M1 Net-_M1-Pad1_ Net-_M1-Pad1_ GND GND pch l=1u w=34u ad=7e-10 as=7e-10 pd=114e-6 ps=114e-6
+M1 Net-_M1-Pad1_ Net-_M1-Pad1_ GND GND nch l=1u w=34u ad=7e-10 as=7e-10 pd=114e-6 ps=114e-6
 R3 "/Sheet6020FB4C/VDD" Net-_M1-Pad1_ 40k
 C1 "/Sheet6020FB4C/Vout" Net-_C1-Pad2_ 3p
 M15 Net-_M12-Pad3_ "/Sheet6020FB4C/Vinp" Net-_M15-Pad3_ Net-_M15-Pad3_ pch l=1u w=25u ad=5.25e-10 as=5.25e-10 pd=89e-6 ps=89e-6
-M20 NC_01 NC_02 NC_03 NC_04 NMOS_OR1 l=1u w=2u
 .end
