@@ -1,4 +1,4 @@
-* Z:\home\seijirom\Dropbox\MakeLSI\2020_9\IshibeOpAmp\ishibe_tb.asc
+* C:\Users\seijirom\Dropbox\MakeLSI\2020_9\IshibeOpAmp\ishibe_tb.asc
 XX1 n004 n001 out N002 NC_01 opamp3ureiauto
 R1 n004 N003 10k
 R2 out n004 100k
@@ -34,7 +34,7 @@ C1 Vout N007 3p
 
 .model NMOS NMOS
 .model PMOS PMOS
-.lib C:\users\seijirom\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.lib C:\Users\seijirom\Documents\LTspiceXVII\lib\cmp\standard.mos
 .include models/OR1_mos
 .ac dec 10 1 1G
 .backanno
