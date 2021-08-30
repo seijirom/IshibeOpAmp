@@ -1,10 +1,9 @@
-* Z:\home\seijirom\work\2021_9\IshibeOpAmp\ishibe_tb.asc
+* C:\Users\seijirom\Dropbox\MakeLSI\2020_9\IshibeOpAmp\volfol_loop_tb.asc
 XX1 n004 n001 out N002 NC_01 opamp3ureiauto
-R1 n004 N003 10k
-R2 out n004 100k
-V1 N003 n001 SINE(0 0.1 1k) AC 1
+V1 n004 out SINE(0 0.1 1k) AC 1
 V2 N002 n001 3
 V3 n001 0 3
+R1 out n001 {R}
 
 * block symbol definitions
 .subckt opamp3ureiauto Vinm Vinp Vout VDD Vbias
@@ -36,6 +35,7 @@ C1 Vout N007 3p
 .model PMOS PMOS
 .lib C:\Users\seijirom\Documents\LTspiceXVII\lib\cmp\standard.mos
 .include models/OR1_mos
-.ac dec 10 1 1G
+.ac dec 10 1 1g
+.step dec param R 10k 1g 1
 .backanno
 .end
