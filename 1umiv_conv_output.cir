@@ -9,9 +9,9 @@
 * net 6 VINP
 * net 7 Gnd
 * device instance $1 r0 *1 102.5,72 CAP
-C$1 4 3 2.9952e-12
-* device instance $2 r0 *1 2,141 HRES
-R$2 1 2 40250
+C$1 4 3 2.9952e-12 CAP
+* device instance $2 r180 *1 2,141 HRES
+R$2 2 1 40250 HRES
 * device instance $3 m90 *1 72.5,61.5 NMOS
 M$3 7 10 4 7 NMOS L=1U W=100U AS=200P AD=200P PS=216U PD=216U
 * device instance $7 r0 *1 12.5,23 NMOS

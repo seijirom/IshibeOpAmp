@@ -1,5 +1,5 @@
 def rc_ext_settings
-  same_circuits '1umiv', '.TOP'
+  same_circuits '1umiv', 'OPAMP3UREIAUTO'
   align
   same_device_classes 'HRES', 'RES'
   same_device_classes 'RES', 'RES'

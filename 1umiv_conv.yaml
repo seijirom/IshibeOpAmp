@@ -1,5 +1,5 @@
 ---
 target: 1umiv_conv
 reference: 1umiv_conv_reference.cir
-netlist: C:/Users/seijirom/Dropbox/MakeLSI/2020_9/IshibeOpAmp/Opamp3ureiauto.cir
-schematic: C:/Users/seijirom/Dropbox/MakeLSI/2020_9/IshibeOpAmp/Opamp3ureiauto.cir
+netlist: "/home/seijirom/work/2021_9/IshibeOpAmp/ishibe_tb.net"
+schematic: "/home/seijirom/work/2021_9/IshibeOpAmp/ishibe_tb.asc"
